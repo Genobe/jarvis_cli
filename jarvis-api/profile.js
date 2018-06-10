@@ -2,7 +2,7 @@ class Profile {
   constructor(hero) {
     this.name = hero.name
     this.description = hero.description
-  }
+  } 
 
   createProfile() {
     return {

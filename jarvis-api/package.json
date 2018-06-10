@@ -1,17 +1,19 @@
 {
-  "name": "jarvis-api",
-  "version": "1.0.0",
-  "description": "simple api server to get marvel data",
+  "name": "jarvis-cli",
+  "version": "0.0.1",
+  "description": "simple api service to retrieve marvel data",
   "main": "index.js",
   "scripts": {
-    "start": "node marvel-api.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon jarvis-api.js"
   },
   "author": "genobe",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.3.0",
+    "commander": "^2.15.1",
     "express": "^4.16.3",
+    "marvel": "^1.1.0",
     "marvel-api": "^1.1.0"
   }
 }
