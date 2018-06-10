@@ -1,10 +1,11 @@
-let createCard = require('./card')
+let detailCard = require('./detail-card')
 
-var getAvengers = function() {
+var getThor = function() {
   let req = new XMLHttpRequest()
   req.onreadystatechange = function() {
     if(this.readyState == 4) {
-      createCard(JSON.parse(this.responseText))
+    let res = JSON.parse(this.responseText)
+      detailCard(res[0])
     }
   }
 
@@ -13,4 +14,4 @@ var getAvengers = function() {
 }
 
 
-module.exports = getAvengers
+module.exports = getThor
