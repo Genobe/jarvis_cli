@@ -13,6 +13,7 @@ var card = function(arr) {
 
     var img = document.createElement('img')
     img.style.width = '100%'
+    card.append(img)
 
 
     var cardContainer = document.createElement('div')
