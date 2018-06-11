@@ -1,13 +1,13 @@
 let detailCard = require('./detail-card')
 
-var getThor = function() {
+var getCaptainAmerica = function() {
   let req = new XMLHttpRequest()
   req.onreadystatechange = function() {
     if(this.readyState == 4) {
     let res = JSON.parse(this.responseText)
 
       for( var x=0; x < res.length; x++) {
-        if(res[x].name == 'Thor') {
+        if(res[x].name == 'Captain America') {
           detailCard(res[x])
         }
       }
@@ -19,4 +19,4 @@ var getThor = function() {
 }
 
 
-module.exports = getThor
+module.exports = getCaptainAmerica
