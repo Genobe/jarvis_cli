@@ -8,7 +8,7 @@ var getAvengers = function() {
     }
   }
 
-  req.open('Get', 'http://ctysowski.tgb2.ninja:4000')
+  req.open('Get', 'http://localhost:4000')
   req.send()
 }
 
